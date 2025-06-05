@@ -1,0 +1,2 @@
+The project was an interesting one. Learnt a lot about data pre-processing and its importance. More about the code
+is explained through text blocks and comments where neccessary.
