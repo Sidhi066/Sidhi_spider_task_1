@@ -1,1 +1,13 @@
+The Shamir's Secret sharing algorithm works on the principle of requiring only k parts of an information (k candidates involved
+in sharing out of n). here the basic principle that allows for ambiguity (tough to guess) and at the same time requires only k 
+people to guess is the idea that through k points, only one (k-1)th degree polynomial can be constructed which will be our cipher
+key. given a secret Ao, we generate random coefficient A1 to Ak-1 to generate a k-1th degree polynomial with Ao as our Y-intercept
+so : P(x) = Ak-1 * (x^k-1) + Ak-2 * (x^k-2) + ... + A1 * (x^1) + Ao
 
+Now we substitute x = 1,2,3...,n and these values of [xi, P(xi)] will be our share coordinates and will be given to each of the n
+candidates. So just with the value of P(xi), the cnadidate can never decode the original message without the others.
+
+Now if any k candidates come together, so lets say x = 1,3,4,5,7,8...,n-1 came and it summed up to k candidates, now since its a
+k-1th degree polynomial, with k variables, we can easily determine the polynomial coefficients and get the key to decipher.
+
+Thats what my code does.
