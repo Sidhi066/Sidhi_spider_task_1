@@ -1,1 +1,52 @@
+1.	What types of traffic (HTTP, DNS, FTP, etc.) are present?
+
+Ans : HTTP -> 6 packet transfers
+	    DNS -> 714 packet transfers
+	    TCP -> 43 packet transfers
+            MDNS -> 1 packet transfer
+
+2.	How many DNS queries were made in total?
+
+Ans : A total of 714 DNS queries were made.
+	
+3.	What types of DNS queries were made?
+
+Ans : Three main types were made : Type A, Type AAAA, and Type HTTPS
+
+4.	What is a Loopback Interface?
+
+Ans : A loopback interface is a virtual interface constructed for the purpose of 
+testing and verifying connectivity of a given network. Packets sent from the 
+device are fed into the interface which loops back into the system and the 
+data transfer properties are indicative of the connectivity of the device system.
+
+5.	How many .txt files were requested? List their names.
+
+Ans : Three text files were requested using the GET request through the HTTP protocol. 
+Names are : “decoy1.txt”, “decoy2.txt”, “encoded.txt”
+	
+	6. One .txt file contains base64-encoded content. Identify and decode it.
+What does it contain?
+
+	      Ans : It contains “FLAG{spmd3r_network_master}”
+	
+7.	Was any attempt made to distract the analyst using decoy files? Explain
+
+Ans : Yes, 2 decoy files were placed and one encoded and the http responses for the 
+2 files showed nothing is here or this is just a decoy and the encoded one had what is given In the answer above.
+
+8.	Are there any known ports being used for uncommon services?
+
+Ans: Yes, normally the HTTP packets are transferred to port 80, but here all 6 are 
+transferred to ports 39562, 44046, 52400 etc. and so a common service is running on an unknown port.
+	
+9.	How many HTTP GET requests are visible in the capture?
+
+Ans : 3 GET Requests are visible in the capture
+
+10. What User-Agent was used to make the HTTP requests?
+
+Ans : All 3 GET requests to the txt files were made through the “curl/8.5.0\r\n” user agent.
+
+
 
