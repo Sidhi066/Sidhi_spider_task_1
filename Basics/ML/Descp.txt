@@ -1,4 +1,0 @@
-The project was an interesting one. Learnt a lot about data pre-processing and its importance. More about the code
-is explained through text blocks and comments where neccessary.
-
-When running the code, please ensure, in the directory creation cell, you change the source to the path of where the "Vehicles" dataset is on your machine and for the next 2 that is train and test paths keep that same path/Train and path/Test
